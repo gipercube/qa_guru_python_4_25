@@ -1,0 +1,7 @@
+requests
+pytest
+allure-pytest
+curlify
+selene
+python-dotenv
+selenium
