@@ -43,6 +43,8 @@ def test_buy_gold_for_gold_club(browser_window_size):
     browser.element('.scrollingContainer').all(".content")[3].click()
     browser.element(".goldclub .featureTitle").should(have.text("Gold club"))
     browser.element("h4").should(have.text("Gold club"))
+    # Кнопка отрисовывается дольше, чем элемент появлется и нажимается тестом
+    time.sleep(1)
     browser.element("[class*='prosButton goldclub']").click()
     browser.element(".infoText").should(have.text("You do not have enough gold to use this feature!"))
     browser.element(".price").should(have.text("€3.99"))

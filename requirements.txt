@@ -2,6 +2,6 @@ requests
 pytest
 allure-pytest
 curlify
-selene
+selene == 2.0.0b17
 python-dotenv
 selenium
